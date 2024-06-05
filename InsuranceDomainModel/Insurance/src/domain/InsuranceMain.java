@@ -34,10 +34,24 @@ public class InsuranceMain {
 		}
 		while (eRunningState == ERunningState.RUNNING){
 			EMenu menu = Dialog.selectMenu(currentUser.getMenuList());
-			currentUser.operate(menu);
+			operate(menu);
 
 		}
 
+	}
+
+	private void operate(EMenu menu) {
+		switch (menu){
+			case SHOW_INSURANCE_LIST -> showInsuranceList();
+			case SHOW_USER_INFO -> showUserInfo();
+			case LOG_OUT -> eUserType = EUserType.GUEST;
+		}
+	}
+
+	private void showUserInfo() {
+	}
+
+	private void showInsuranceList() {
 	}
 
 

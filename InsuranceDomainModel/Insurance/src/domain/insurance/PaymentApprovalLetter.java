@@ -1,10 +1,11 @@
 package domain.insurance;
 
+import domain.constants.EAccessAuthority;
 import domain.insurance.Insurance;
 
 public class PaymentApprovalLetter {
 
-	private EAccessableAuthority accessableAuthority;
+	private EAccessAuthority accessAuthority;
 	private boolean approval;
 	private String basis;
 	private double claimedInsuranceAmount;

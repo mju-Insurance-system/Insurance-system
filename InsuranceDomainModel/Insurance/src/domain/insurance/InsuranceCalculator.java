@@ -1,5 +1,7 @@
 package domain.insurance;
 
+import domain.constants.EInsuranceType;
+
 public class InsuranceCalculator {
 
 	public InsuranceCalculator(){

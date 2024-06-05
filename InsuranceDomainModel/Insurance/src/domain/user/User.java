@@ -3,16 +3,18 @@ package domain.user;
 import domain.constants.EAccessAuthority;
 import domain.constants.EMenu;
 import domain.constants.EUserType;
+import lombok.Getter;
 
+@Getter
 public class User {
 
 	protected EAccessAuthority accessAuthority;
-	private String userId;
-	private int userNum;
-	private String userPw;
-	private EMenu[] menuList;
+	protected String userId;
+	protected int userNum;
+	protected String userPw;
+	protected EMenu[] menuList;
 	protected EUserType eUserType;
-	private String userName;
+	protected String userName;
 
 	public User(){
 
@@ -50,4 +52,5 @@ public class User {
 	public String getName() {
 		return this.userName;
 	}
+
 }

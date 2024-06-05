@@ -2,6 +2,7 @@ package domain.user;
 
 import domain.user.User;
 import domain.user.UserList;
+import domain.user.customer.Customer;
 
 import java.util.Vector;
 
@@ -11,19 +12,17 @@ public class UserListImpl implements UserList {
 	public User m_User;
 
 	public UserListImpl(){
-
+		userVector = new Vector<>();
+		userVector.add(new Customer("test"));
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 
 	/**
 	 * 
 	 * @param newUser
 	 */
 	public void AddUser(User newUser){
-
+		userVector.add(newUser);
 	}
 
 	/**
@@ -31,12 +30,17 @@ public class UserListImpl implements UserList {
 	 * @param userId
 	 */
 	public User getUser(String userId){
+		for (User user : userVector) {
+			if(user.getUserId().equals(userId)){
+				return user;
+			}
+		}
 		return null;
 	}
 	
 
 	public Vector<User> getUsers(){
-		return null;
+		return userVector;
 	}
 
 	/**
@@ -44,7 +48,6 @@ public class UserListImpl implements UserList {
 	 * @param targetUserId
 	 */
 	public void removeUser(String targetUserId){
-
 	}
 
 	/**
@@ -63,6 +66,10 @@ public class UserListImpl implements UserList {
 
 	@Override
 	public User logIn(String userId, String userPw) {
+		User logInUser = getUser(userId);
+		if(logInUser.getUserPw().equals(userPw)){
+			return logInUser;
+		}
 		return null;
 	}
 

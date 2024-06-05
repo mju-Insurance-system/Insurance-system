@@ -1,5 +1,6 @@
 package domain.insurance;
 
+import domain.constants.EAccessAuthority;
 import domain.insurance.Insurance;
 
 public class InsuranceDesign {

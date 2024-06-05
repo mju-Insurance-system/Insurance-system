@@ -1,6 +1,11 @@
 package domain.user.customer;
 
 
+import domain.constants.EAccessAuthority;
+import domain.constants.EMenu;
+import domain.constants.EUserType;
+
+
 import domain.insurance.Insurance;
 import domain.insurance.InsuranceClaim;
 import domain.insurance.accident.InsuranceAccident;
@@ -22,6 +27,19 @@ public class Customer extends User {
 
 	public Customer(){
 
+	}
+
+	public Customer(String str) {
+		this.age = 25;
+		this.bankAccount = "하나은행 01534345346543";
+		this.eUserType = EUserType.CUSTOMER;
+		this.name = "김고객";
+		this.SSN = "9904241234567";
+		this.accessAuthority = EAccessAuthority.CUSTOMER;
+		this.userId = "a";
+		this.userPw = "1111";
+		this.userName = "김고객";
+		this.menuList = new EMenu[]{EMenu.LOG_OUT, EMenu.SHOW_INSURANCE_LIST, EMenu.SHOW_SUBSCRIPTION_LIST, EMenu.SHOW_USER_INFO};
 	}
 
 	public void finalize() throws Throwable {

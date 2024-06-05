@@ -1,5 +1,6 @@
 package domain.insurance;
 
+import domain.constants.EVehicleType;
 import domain.insurance.Insurance;
 
 public class VehicleInsurance extends Insurance {

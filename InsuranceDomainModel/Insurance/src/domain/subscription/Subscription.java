@@ -1,5 +1,6 @@
 package domain.subscription;
 
+import domain.constants.EAccessAuthority;
 import domain.insurance.Insurance;
 import domain.insurance.InsuranceTypeForm;
 import domain.user.User;
@@ -9,7 +10,7 @@ import java.util.Date;
 
 public class Subscription {
 
-	private EAccessAuthority[] accessableAuthority;
+	private EAccessAuthority[] accessAuthority;
 	private Date expirationDate;
 	private Customer insuredCustomer;
 	private double interestRate;

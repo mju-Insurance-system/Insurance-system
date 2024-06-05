@@ -1,13 +1,12 @@
 package domain.constants;
 
 public enum EMenu {
-    LOG_IN("�α���"),
-    LOG_OUT("�α׾ƿ�"),
-    SIGN_UP("ȸ������"),
-    SHOW_INSURANCE_LIST("��ü ������ ����"),
-    SHOW_APPLICATION_LIST("���谡�� ��û��� ����"),
-    EXAMINE_APPLICATION("���谡�� �ɻ��ϱ�"),
-    SHOW_MEMBERSHIP_INFO("ȸ������ ����")
+    LOG_IN("로그인"),
+    LOG_OUT("로그아웃"),
+    SIGN_UP("회원가입"),
+    SHOW_INSURANCE_LIST("보험 목록 보기"),
+    SHOW_SUBSCRIPTION_LIST("계약목록 보기"),
+    SHOW_USER_INFO("회원 정보 보기")
     ;
 
 
