@@ -4,28 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1fd7bd4-f080-4e2b-9d73-6f3354153d9b" name="변경" comment=".">
-      <change afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EInsuranceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/ESpecialOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EVehicleType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InsuranceDomainModel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InsuranceDomainModel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/InsuranceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/InsuranceMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EAccessAuthority.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EAccessAuthority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/Insurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/Insurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/InsuranceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/InsuranceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/InsuranceDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/InsuranceDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/PaymentApprovalLetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/PaymentApprovalLetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/VehicleInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/VehicleInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/accident/InsuranceAccident.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/insurance/accident/InsuranceAccident.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/subscription/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/subscription/Subscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserListImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/customer/Customer.java" afterDir="false" />
-    </list>
+    <list default="true" id="f1fd7bd4-f080-4e2b-9d73-6f3354153d9b" name="변경" comment="." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,29 +28,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/3tmdw/OneDrive - 명지대학교/문서/GitHub/InsuranceSystem_Git/Insurance-system",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "문제",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/3tmdw/OneDrive - 명지대학교/문서/GitHub/InsuranceSystem_Git/Insurance-system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;문제&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="domain.constants" />
@@ -119,6 +98,7 @@
       <updated>1717552843270</updated>
       <workItem from="1717562334878" duration="3171000" />
       <workItem from="1717571104855" duration="4948000" />
+      <workItem from="1717576118001" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1717565385829</created>
@@ -127,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717565385829</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <created>1717576205997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717576205997</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
