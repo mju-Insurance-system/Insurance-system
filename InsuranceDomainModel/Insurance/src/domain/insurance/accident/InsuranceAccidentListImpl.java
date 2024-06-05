@@ -1,59 +1,58 @@
-package domain.insurance.accident;
+package domain;
 
 import java.util.Vector;
 
 public class InsuranceAccidentListImpl implements InsuranceAccidentList {
 
-	private Vector<InsuranceAccident> insuranceAccidentVerctor;
+	private Vector<InsuranceAccident> insuranceAccidentVector;
 	public InsuranceAccident m_InsuranceAccident;
 
 	public InsuranceAccidentListImpl(){
-
+		insuranceAccidentVector = new Vector<>();
 	}
 
-	public void finalize() throws Throwable {
 
-	}
-
-	/**
-	 * 
-	 * @param insuranceAccident
-	 */
 	public void addInsuranceAccident(InsuranceAccident insuranceAccident){
-
+		insuranceAccidentVector.add(insuranceAccident);
 	}
 
-	/**
-	 * 
-	 * @param insuranceAccidentId
-	 */
 	public InsuranceAccident getInsuranceAccident(int insuranceAccidentId){
-		return null;
+		for (InsuranceAccident accident : insuranceAccidentVector) {
+            if (m_InsuranceAccident.getInsuranceAccidentId() == insuranceAccidentId) {
+                return accident;
+            }
+        }
+        return null;
 	}
 
 	public Vector<InsuranceAccident> getInsuranceAccidentVector(){
-		return null;
+		return insuranceAccidentVector;
 	}
 
+	
 	public Vector<InsuranceAccident> getUnresolvedInsuranceAccidents(){
-		return null;
+		Vector<InsuranceAccident> unresolvedAccidents = new Vector<>();
+        for (InsuranceAccident accident : insuranceAccidentVector) {
+            if (!m_InsuranceAccident.isbConclud()) unresolvedAccidents.add(accident);
+        }
+        return unresolvedAccidents;
 	}
 
-	/**
-	 * 
-	 * @param insuranceAccidentId
-	 */
 	public void removeInsuranceAccident(int insuranceAccidentId){
-
+		for(InsuranceAccident accident : insuranceAccidentVector) {
+			if(accident.getInsuranceAccidentId() == (insuranceAccidentId)) insuranceAccidentVector.remove(insuranceAccidentId);
+			else System.out.println("삭제할 값이 없습니다.");
+		}
 	}
 
-	/**
-	 * 
-	 * @param insuranceAccidentId
-	 * @param newInsuranceAccident
-	 */
+	
 	public void replaceInsuranceAccident(int insuranceAccidentId, InsuranceAccident newInsuranceAccident){
-
+		for (int i = 0; i < insuranceAccidentVector.size(); i++) {
+            if (insuranceAccidentVector.get(i).getInsuranceAccidentId() == insuranceAccidentId) {
+                insuranceAccidentVector.set(i, newInsuranceAccident);
+                break;
+            }
+        }
 	}
 
 }
