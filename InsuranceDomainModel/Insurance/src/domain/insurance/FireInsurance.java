@@ -1,17 +1,21 @@
-package domain.insurance;
+package domain;
 
-import domain.insurance.Insurance;
 
-public class FireInsurance extends Insurance {
+public class DiseaseInsurance extends Insurance {
 
-	private double propertyValue;
+	private EDisease[] guaranteedDisease;
 
-	public FireInsurance(){
-
+	public DiseaseInsurance(){
+		
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
+	public EDisease[] getGuaranteedDisease() {
+		return this.guaranteedDisease;
 	}
 
+	public void setGuaranteedDisease(EDisease[] guaranteedDisease) {
+		this.guaranteedDisease = guaranteedDisease;
+	}
+
+	
 }
