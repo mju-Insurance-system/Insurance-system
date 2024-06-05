@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1fd7bd4-f080-4e2b-9d73-6f3354153d9b" name="변경" comment="" />
+    <list default="true" id="f1fd7bd4-f080-4e2b-9d73-6f3354153d9b" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EAccessAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EUserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/Dialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/EOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/constants/EMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/InsuranceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/InsuranceMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserListImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/InsuranceDomainModel/Insurance/src/domain/user/UserListImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,17 +38,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/채서연/Desktop/InsuranceDomainModel&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/채서연/Desktop/InsuranceDomainModel",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "모듈",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="domain.constants" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
@@ -68,7 +102,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717552843270</updated>
+      <workItem from="1717562334878" duration="2997000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

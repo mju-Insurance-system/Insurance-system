@@ -1,6 +1,6 @@
-package domain;
+package domain.constants;
 
-enum EOperation{
+public enum EMenu {
     LOG_IN("�α���"),
     LOG_OUT("�α׾ƿ�"),
     SIGN_UP("ȸ������"),
@@ -13,7 +13,7 @@ enum EOperation{
 
     private final String menuName;
 
-    EOperation(String menuName) {
+    EMenu(String menuName) {
         this.menuName = menuName;
     }
 

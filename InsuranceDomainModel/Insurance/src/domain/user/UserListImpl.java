@@ -56,4 +56,14 @@ public class UserListImpl implements UserList {
 
 	}
 
+	@Override
+	public boolean signUp() {
+		return false;
+	}
+
+	@Override
+	public User logIn(String userId, String userPw) {
+		return null;
+	}
+
 }

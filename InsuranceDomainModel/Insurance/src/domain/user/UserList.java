@@ -33,4 +33,7 @@ public interface UserList {
 	 */
 	public void replaceUser(String targetUserId, User newUser);
 
+	boolean signUp();
+
+	User logIn(String userId, String userPw);
 }

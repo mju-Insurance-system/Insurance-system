@@ -1,7 +1,7 @@
 package domain;
 
 import java.util.Scanner;
-import constants.EOperation;
+import domain.constants.EMenu;
 
 public class Dialog {
 
@@ -126,7 +126,7 @@ public class Dialog {
 
 
 
-    public static void showMenus(EOperation[] menus){
+    public static void showMenus(EMenu[] menus){
         for (int i = 0; i < menus.length; i++){
             System.out.println("    " + (i+1) + ". " + menus[i].getMenuName());
         }
@@ -158,7 +158,7 @@ public class Dialog {
      * @param menus Selectable을 구현한 enum
      * @return 사용자가 입력한 정수 i
      */
-    public static EOperation selectMenu(EOperation[] menus){
+    public static EMenu selectMenu(EMenu[] menus){
         showMenus(menus);
         return menus[selectInRange(menus.length)-1];
     }
