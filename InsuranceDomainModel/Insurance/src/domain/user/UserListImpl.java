@@ -9,7 +9,6 @@ import java.util.Vector;
 public class UserListImpl implements UserList {
 
 	private Vector<User> userVector;
-	public User m_User;
 
 	public UserListImpl(){
 		userVector = new Vector<>();

@@ -5,8 +5,10 @@ import domain.constants.EMenu;
 import domain.constants.EUserType;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class User {
+public class User implements Serializable {
 
 	protected EAccessAuthority accessAuthority;
 	protected String userId;
