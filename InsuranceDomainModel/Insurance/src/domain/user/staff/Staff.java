@@ -10,7 +10,6 @@ import domain.user.User;
 public class Staff extends User {
 
 	private EMenu[] staffMenus = {
-			EMenu.SHOW_INSURANCE_LIST,
 			EMenu.SHOW_SUBSCRIPTION_LIST,
 			EMenu.SHOW_USER_INFO_LIST
 	};

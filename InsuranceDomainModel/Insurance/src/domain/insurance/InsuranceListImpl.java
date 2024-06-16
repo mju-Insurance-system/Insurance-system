@@ -5,16 +5,19 @@ import java.util.Vector;
 
 public class InsuranceListImpl implements InsuranceList {
 
+
+	private int nextInsuranceId;
 	private Vector<Insurance> insuranceVector;
 
 	private static final String FILE_NAME = "insuranceList.dat";
 	private static final String FILE_PATH = "data" + File.separator + FILE_NAME;
-
-
+	private static final String NEXT_ID_FILE_NAME = "nextInsuranceId.dat";
+	private static final String NEXT_ID_FILE_PATH = "data" + File.separator + NEXT_ID_FILE_NAME;
 
 	public InsuranceListImpl(){
 		insuranceVector = new Vector<>();
 		loadInsurances();
+		loadNextId();
 	}
 
 	private void loadInsurances() {
@@ -37,17 +40,35 @@ public class InsuranceListImpl implements InsuranceList {
 		}
 	}
 
-	/**
-	 * 
-	 * @param insurance
-	 */
-	public void addInsurance(Insurance insurance){
-		insuranceVector.add(insurance);
-		saveInsurances();
+	private void loadNextId() {
+		try (DataInputStream dis = new DataInputStream(new FileInputStream(NEXT_ID_FILE_PATH))) {
+			nextInsuranceId = dis.readInt();
+		} catch (IOException e) {
+			nextInsuranceId = 0;
+		}
+	}
+
+	private void saveNextId() {
+		try (DataOutputStream dos = new DataOutputStream(new FileOutputStream(NEXT_ID_FILE_PATH))) {
+			dos.writeInt(nextInsuranceId);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/**
-	 * 
+	 *
+	 * @param insurance
+	 */
+	public void addInsurance(Insurance insurance){
+		insurance.setInsuranceId(nextInsuranceId++);
+		insuranceVector.add(insurance);
+		saveInsurances();
+		saveNextId();
+	}
+
+	/**
+	 *
 	 * @param insuranceId
 	 */
 	public Insurance getInsurance(int insuranceId){
@@ -64,16 +85,17 @@ public class InsuranceListImpl implements InsuranceList {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param insuranceId
 	 */
 	public void removeInsurance(int insuranceId){
 		insuranceVector.removeIf(insurance -> insurance.getInsuranceId() == insuranceId);
 		saveInsurances();
+		saveNextId();
 	}
 
 	/**
-	 * 
+	 *
 	 * @param insuranceId
 	 * @param newInsurance
 	 */
@@ -84,6 +106,11 @@ public class InsuranceListImpl implements InsuranceList {
 				return;
 			}
 		}
+		saveInsurances();
 	}
 
+	@Override
+	public String toString() {
+		return "   |   보험명   |  보장내용  |   보험분류   |   보장한도   |   특약   \n" + insuranceVector;
+	}
 }

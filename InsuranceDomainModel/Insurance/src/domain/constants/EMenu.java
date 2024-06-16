@@ -1,6 +1,7 @@
 package domain.constants;
 
-public enum EMenu {
+public enum EMenu implements Selectable{
+    EXIT("프로그램 종료"),
     LOG_IN("로그인"),
     LOG_OUT("로그아웃"),
     SIGN_UP("회원가입"),

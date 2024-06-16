@@ -1,4 +1,4 @@
-package domain.insurance;
+package domain.constants;
 
 public enum EDisease {
 	고혈압,

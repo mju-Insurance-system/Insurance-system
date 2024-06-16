@@ -31,4 +31,6 @@ public interface SubscriptionList {
 	 */
 	public void replaceSubscription(int subscriptionId, Subscription newSubscription);
 
+	String showRequests();
+	String showSubscriptionList();
 }

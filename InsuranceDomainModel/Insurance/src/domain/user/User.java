@@ -17,7 +17,9 @@ public class User implements Serializable {
 	protected int userNum;
 	protected String userPw;
 	protected EMenu[] menuList = new EMenu[]{
-			EMenu.SHOW_USER_INFO
+			EMenu.SHOW_USER_INFO,
+			EMenu.SHOW_INSURANCE_LIST,
+			EMenu.LOG_OUT
 	};
 	protected EUserType eUserType;
 	protected String userName;

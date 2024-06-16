@@ -1,5 +1,6 @@
 package domain.user;
 
+import domain.constants.EMenu;
 import domain.user.User;
 import domain.user.UserList;
 import domain.user.customer.Customer;

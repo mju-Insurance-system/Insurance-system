@@ -2,6 +2,7 @@ package domain;
 
 import java.util.Scanner;
 import domain.constants.EMenu;
+import domain.constants.Selectable;
 
 public class Dialog {
 
@@ -20,6 +21,9 @@ public class Dialog {
             sb.append(separatorChar);
         }
         System.out.println(sb.toString());
+    }
+    public static void print(String msg){
+        System.out.println(msg);
     }
 
     public static void separator2(){
@@ -126,7 +130,7 @@ public class Dialog {
 
 
 
-    public static void showMenus(EMenu[] menus){
+    public static void showMenus(Selectable[] menus){
         for (int i = 0; i < menus.length; i++){
             System.out.println("    " + (i+1) + ". " + menus[i].getMenuName());
         }
@@ -156,9 +160,9 @@ public class Dialog {
     /** Selectable을 구현한 Enum을 입력받아 메뉴를 띄우고
      * 사용자에게 메뉴 범위 안의 정수를 입력받아 리턴
      * @param menus Selectable을 구현한 enum
-     * @return 사용자가 입력한 정수 i
+     * @return 사용자가 입력한 정수 i-1 번째 요소
      */
-    public static EMenu selectMenu(EMenu[] menus){
+    public static Selectable selectMenu(Selectable[] menus){
         showMenus(menus);
         return menus[selectInRange(menus.length)-1];
     }

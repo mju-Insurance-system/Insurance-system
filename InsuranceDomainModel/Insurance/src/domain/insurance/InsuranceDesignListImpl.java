@@ -4,6 +4,8 @@ import java.util.Vector;
 
 public class InsuranceDesignListImpl implements InsuranceDesignList {
 
+	private int nextId;
+
 	private Vector<InsuranceDesign> designVector;
 	public InsuranceDesign m_InsuranceDesign;
 
@@ -11,9 +13,6 @@ public class InsuranceDesignListImpl implements InsuranceDesignList {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 
 	/**
 	 * 

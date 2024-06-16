@@ -5,10 +5,12 @@ import domain.insurance.Insurance;
 import domain.insurance.InsuranceTypeForm;
 import domain.user.User;
 import domain.user.customer.Customer;
+import lombok.Getter;
 
 import java.io.Serializable;
 import java.util.Date;
 
+@Getter
 public class Subscription implements Serializable {
 
 	private EAccessAuthority[] accessAuthority;
@@ -17,16 +19,17 @@ public class Subscription implements Serializable {
 	private double interestRate;
 	private double properInsuranceFee;
 	private Insurance subscribedInsurance;
-	private Date subscribingDate;
+	private String subscribingDate;
 	private int subscriptionId;
 	private double totalPayment;
+	private boolean bRegistered;
 
-	public Subscription(){
 
-	}
-
-	public void finalize() throws Throwable {
-
+	public Subscription(Customer insuredCustomer, Insurance subscribedInsurance, String subscribingDate,  boolean bRegistered) {
+		this.insuredCustomer = insuredCustomer;
+		this.subscribedInsurance = subscribedInsurance;
+		this.subscribingDate = subscribingDate;
+		this.bRegistered = bRegistered;
 	}
 
 	/**
@@ -89,4 +92,11 @@ public class Subscription implements Serializable {
 		return 0;
 	}
 
+	@Override
+	public String toString() {
+		return subscriptionId +
+				"   |   " + insuredCustomer.getUserName() +
+				"   |   " + subscribedInsurance.getInsuranceName()+
+				"   |   " + subscribingDate;
+	}
 }

@@ -3,10 +3,11 @@ package domain.insurance;
 import domain.constants.EAccessAuthority;
 import domain.insurance.Insurance;
 
-public class InsuranceDesign {
+import java.io.Serializable;
 
-	protected EAccessAuthority[] accessAuthority;
-	protected Insurance currentInsurance;
+public class InsuranceDesign implements Serializable {
+
+	protected EAccessAuthority accessAuthority = EAccessAuthority.STAFF;
 	protected double estimatedInsuranceAmount;
 	protected double estimatedLossRate;
 	private int insuranceDesignId;
@@ -19,9 +20,6 @@ public class InsuranceDesign {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 
 	/**
 	 * 
