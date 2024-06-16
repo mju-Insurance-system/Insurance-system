@@ -5,9 +5,10 @@ public class HumanResourceTeam extends Staff {
 
 	public EmploymentContract m_EmploymentContract;
 
-	public HumanResourceTeam(){
-
+	public HumanResourceTeam(String userId, String userPw, String userName, String phoneNumber, String SSN, int age, int department) {
+		super(userId, userPw, userName, phoneNumber, SSN, age, department);
 	}
+
 
 	public void finalize() throws Throwable {
 		super.finalize();

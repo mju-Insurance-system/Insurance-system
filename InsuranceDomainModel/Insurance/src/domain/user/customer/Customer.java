@@ -15,36 +15,35 @@ import domain.user.User;
 
 public class Customer extends User {
 
-	private int age;
 	private String bankAccount;
 	private Subscription[] insuranceHistory;
-	private String name;
-	private String phoneNumber;
-	private String SSN;
 	private Insurance[] subscribingInsurance;
-	public InsuranceAccident m_InsuranceAccident;
-	public Subscription m_Subscription;
+
 
 	public Customer(){
 
 	}
 
-	public Customer(String str) {
-		this.age = 25;
-		this.bankAccount = "하나은행 01534345346543";
-		this.eUserType = EUserType.CUSTOMER;
-		this.name = "김고객";
-		this.SSN = "9904241234567";
-		this.accessAuthority = EAccessAuthority.CUSTOMER;
-		this.userId = "a";
-		this.userPw = "1111";
-		this.userName = "김고객";
-		this.menuList = new EMenu[]{EMenu.LOG_OUT, EMenu.SHOW_INSURANCE_LIST, EMenu.SHOW_SUBSCRIPTION_LIST, EMenu.SHOW_USER_INFO};
+	public Customer(String userId, String userPw, String userName, String phoneNumber, String SSN, int age) {
+		super(userId, userPw, userName, phoneNumber, SSN, age);
+		eUserType = EUserType.CUSTOMER;
+		accessAuthorities = new EAccessAuthority[]{EAccessAuthority.CUSTOMER};
+		insuranceHistory = new Subscription[0];
+		subscribingInsurance = new Insurance[0];
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+//	public Customer(String str) {
+//		this.age = 25;
+//		this.bankAccount = "하나은행 01534345346543";
+//		this.eUserType = EUserType.CUSTOMER;
+//		this.userName = "김고객";
+//		this.SSN = "9904241234567";
+//		this.userId = "a";
+//		this.userPw = "1111";
+//		this.userName = "김고객";
+//		this.menuList = new EMenu[]{EMenu.LOG_OUT, EMenu.SHOW_INSURANCE_LIST, EMenu.SHOW_SUBSCRIPTION_LIST, EMenu.SHOW_USER_INFO};
+//	}
+
 
 	public boolean callEmergency(){
 		return false;
@@ -52,9 +51,9 @@ public class Customer extends User {
 
 	/**
 	 * 
-	 * @param insurance claim
+	 * @param insuranceClaim
 	 */
-	public InsuranceAccident claimInsurance(InsuranceClaim insurance_claim){
+	public InsuranceAccident claimInsurance(InsuranceClaim insuranceClaim){
 		return null;
 	}
 

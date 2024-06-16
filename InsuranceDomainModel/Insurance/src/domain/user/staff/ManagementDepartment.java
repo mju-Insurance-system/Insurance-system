@@ -7,9 +7,10 @@ public class ManagementDepartment extends Staff {
 
 	public InsuranceDesign m_InsuranceDesign;
 
-	public ManagementDepartment(){
-
+	public ManagementDepartment(String userId, String userPw, String userName, String phoneNumber, String SSN, int age, int department) {
+		super(userId, userPw, userName, phoneNumber, SSN, age, department);
 	}
+
 
 	public void finalize() throws Throwable {
 		super.finalize();

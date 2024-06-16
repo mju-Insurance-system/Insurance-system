@@ -6,6 +6,8 @@ import java.util.Vector;
 
 public interface UserList {
 
+
+
 	/**
 	 * 
 	 * @param newUser
@@ -36,4 +38,6 @@ public interface UserList {
 	boolean signUp();
 
 	User logIn(String userId, String userPw);
+
+	boolean checkDuplicateId(String id);
 }

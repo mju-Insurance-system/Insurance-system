@@ -139,11 +139,11 @@ public class Dialog {
      */
     public static int selectInRange(int range){
         int select = -1;
-        while (select < 0 || select >= range) {
+        while (select <= 0 || select > range) {
             try {
                 userInputMark();
                 select = Integer.parseInt(scanner.nextLine());
-                if (select < 0 || select >= range) {
+                if (select <= 0 || select > range) {
                     systemMsg("1 ~ " + range + " 사이의 숫자를 선택하세요.");
                 }
             } catch (NumberFormatException e) {

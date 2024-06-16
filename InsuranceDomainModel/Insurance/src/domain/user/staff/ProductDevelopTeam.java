@@ -4,13 +4,11 @@ import domain.insurance.InsuranceDesign;
 
 public class ProductDevelopTeam extends ManagementDepartment {
 
-	public ProductDevelopTeam(){
 
+	public ProductDevelopTeam(String userId, String userPw, String userName, String phoneNumber, String SSN, int age, int department) {
+		super(userId, userPw, userName, phoneNumber, SSN, age, department);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
 
 	public InsuranceDesign createInsuranceDesign(){
 		return null;

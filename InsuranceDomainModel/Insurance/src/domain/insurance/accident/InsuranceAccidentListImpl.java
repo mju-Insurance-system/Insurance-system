@@ -1,4 +1,4 @@
-package domain;
+package domain.insurance.accident;
 
 import java.util.Vector;
 
@@ -33,7 +33,7 @@ public class InsuranceAccidentListImpl implements InsuranceAccidentList {
 	public Vector<InsuranceAccident> getUnresolvedInsuranceAccidents(){
 		Vector<InsuranceAccident> unresolvedAccidents = new Vector<>();
         for (InsuranceAccident accident : insuranceAccidentVector) {
-            if (!m_InsuranceAccident.isbConclud()) unresolvedAccidents.add(accident);
+            if (!m_InsuranceAccident.isBConclude()) unresolvedAccidents.add(accident);
         }
         return unresolvedAccidents;
 	}

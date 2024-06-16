@@ -16,8 +16,5 @@ public class EmploymentContract {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 
 }

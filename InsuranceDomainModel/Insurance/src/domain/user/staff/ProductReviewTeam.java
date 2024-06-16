@@ -5,8 +5,9 @@ import domain.insurance.InsuranceDesign;
 
 public class ProductReviewTeam extends ManagementDepartment {
 
-	public ProductReviewTeam(){
 
+	public ProductReviewTeam(String userId, String userPw, String userName, String phoneNumber, String SSN, int age, int department) {
+		super(userId, userPw, userName, phoneNumber, SSN, age, department);
 	}
 
 	public void finalize() throws Throwable {

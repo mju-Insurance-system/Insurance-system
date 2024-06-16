@@ -7,13 +7,13 @@ public class SubscriptionManagementTeam extends Staff {
 
 	public Subscription m_Subscription;
 
-	public SubscriptionManagementTeam(){
-
+	public SubscriptionManagementTeam(String userId, String userPw, String userName, String phoneNumber, String SSN, int age, int department) {
+		super(userId, userPw, userName, phoneNumber, SSN, age, department);
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+
+
+
 
 	/**
 	 * 

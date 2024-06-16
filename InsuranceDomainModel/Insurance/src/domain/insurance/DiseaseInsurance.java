@@ -1,5 +1,6 @@
 package domain.insurance;
 
+
 public class DiseaseInsurance extends Insurance {
 
 	private EDisease[] guaranteedDisease;
@@ -8,8 +9,6 @@ public class DiseaseInsurance extends Insurance {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
+
 
 }

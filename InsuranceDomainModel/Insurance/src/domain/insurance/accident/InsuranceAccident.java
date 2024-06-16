@@ -8,10 +8,11 @@ import domain.insurance.PaymentApprovalLetter;
 import domain.insurance.Insurance;
 import domain.user.User;
 import domain.user.staff.RiskCoveringTeam;
+import lombok.Getter;
 
 import java.io.File;
 import java.util.Date;
-
+@Getter
 public class InsuranceAccident {
 
 	private EAccessAuthority[] accessAuthority;
@@ -38,9 +39,6 @@ public class InsuranceAccident {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
 
 	/**
 	 * 
@@ -68,7 +66,7 @@ public class InsuranceAccident {
 
 	/**
 	 * 
-	 * @param accessing user
+	 * @param accessingUser
 	 */
 	public boolean checkAuthority(User accessingUser){
 		return false;
@@ -116,8 +114,8 @@ public class InsuranceAccident {
 
 	/**
 	 * 
-	 * @param pay date
-	 * @param payment approval letter
+	 * @param payDate
+	 * @param paymentApprovalLetter
 	 */
 	public boolean payInsuredAmount(Date payDate, PaymentApprovalLetter paymentApprovalLetter){
 		return false;

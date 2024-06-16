@@ -6,9 +6,10 @@ import domain.insurance.InsuranceTypeForm;
 import domain.user.User;
 import domain.user.customer.Customer;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Subscription {
+public class Subscription implements Serializable {
 
 	private EAccessAuthority[] accessAuthority;
 	private Date expirationDate;

@@ -1,6 +1,14 @@
-package domain;
+package domain.insurance;
 
-public class Insurance {
+import domain.constants.EInsuranceType;
+import domain.constants.ESpecialOption;
+import domain.insurance.accident.InsuranceAccident;
+import domain.subscription.InsuranceSubscriptionForm;
+import domain.subscription.Subscription;
+
+import java.io.Serializable;
+
+public class Insurance implements Serializable {
 
 	protected boolean bEnable;
 	protected String coverage;
@@ -9,8 +17,8 @@ public class Insurance {
 	protected int insuranceId;
 	protected String insuranceName;
 	protected double interestRate;
-	protected double liabliltyLimit;
-	protected String liabliltyReason;
+	protected double liabilityLimit;
+	protected String liabilityReason;
 	protected double lossRate;
 	protected ESpecialOption[] specialOption;
 	protected String surchargeFactor;
@@ -85,20 +93,20 @@ public class Insurance {
 		this.interestRate = interestRate;
 	}
 
-	public double getLiabliltyLimit() {
-		return liabliltyLimit;
+	public double getLiabilityLimit() {
+		return liabilityLimit;
 	}
 
-	public void setLiabliltyLimit(double liabliltyLimit) {
-		this.liabliltyLimit = liabliltyLimit;
+	public void setLiabilityLimit(double liabilityLimit) {
+		this.liabilityLimit = liabilityLimit;
 	}
 
-	public String getLiabliltyReason() {
-		return liabliltyReason;
+	public String getLiabilityReason() {
+		return liabilityReason;
 	}
 
-	public void setLiabliltyReason(String liabliltyReason) {
-		this.liabliltyReason = liabliltyReason;
+	public void setLiabilityReason(String liabilityReason) {
+		this.liabilityReason = liabilityReason;
 	}
 
 	public double getLossRate() {
